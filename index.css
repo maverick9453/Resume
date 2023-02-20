@@ -1,0 +1,146 @@
+body{
+   background-color: #FFFDCB;
+}
+
+#white{
+background-color:#FFFFFF;
+width:39rem;
+height: 57rem;
+margin-top: 7rem;
+margin-left: 40rem;
+display: inline-block;
+}
+#blue{
+    display: inline-block;
+    background-color:#072A4C;
+    width: 12rem;
+    height:57rem;
+}
+#half-circle{
+    margin-left:0px;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 0.625rem solid  #969008;
+    border-radius: 50%;
+    /* Halve the circle */
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    /* Rotate the circle */
+    transform: rotate(45deg);
+    /* bringing circle in upward direction */
+    position: relative;
+    left: -2.4rem;
+    bottom :38rem;
+  }
+  #full-circle{
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 50%;
+  background:#969008 ;
+  position:relative;
+  bottom: 63.5rem;
+  left:37.5rem;
+  }
+  #image {
+    width: 7rem;
+    height: 7rem;
+    position:relative;
+    bottom:63rem;
+    left:44rem;
+  }
+  #image img{
+    height: 5rem;
+    width:5rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  .hire-button{
+    width: 200px;
+    height: 50px;
+    font-family: Manrope;
+    border-radius: 0.5rem ;
+    border: none;
+    background-color:#d6d25e;
+    font-weight: 600px;
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 33px;
+    position: relative;
+    bottom: 30rem;
+    left: 8rem;
+  }
+  .hire-button:hover{
+    background:#b4b048;
+  }
+  #name{
+    font-family: Manrope;
+    position: relative;
+    bottom: 60rem;
+    left:-5rem;
+    font-weight: 37.5rem;
+    font-size: 2.2rem;
+  }
+.detail{
+  width: 250px;
+  position: relative;
+  bottom: 58rem;
+  left: 122px;
+ font-family: Manrope;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+.quality{
+  width: 250px;
+  position: relative;
+  bottom: 56rem;
+  left: 6rem;
+  font-family: Manrope;
+ font-size: 18px;
+ font-weight: 400;
+ line-height: 40px;
+ letter-spacing: 0em;
+ text-align: left;
+color:#00000099;
+}
+.download{
+height: 53px;
+width: 224px;
+border-radius: 8px;
+border: none;
+padding: 10px 24px 10px 24px;
+background: #CCC74C;
+position: relative;
+bottom:103rem;
+left:60rem;
+font-size: 1.2rem;
+font-family: Manrope;
+font-weight: 600px;
+color:#FFFFFF;
+line-height: 33px;
+}
+.details-skills{
+  width: 120px;
+  position:relative;
+  left :80rem;
+  bottom:90rem;
+  font-family: Merriweather;
+  color: whitesmoke;
+}
+.hey{
+  width: 600px;
+  font-family: Merriweather;
+  /* background-color: red; */
+  position :relative;
+  left: 41rem;
+  bottom: 108rem;
+}
+.intro{
+  width:15rem;
+  position: relative;
+  left: 53rem;
+  bottom: 155.3rem;
+}

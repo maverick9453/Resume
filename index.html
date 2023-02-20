@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css" />    
+    <title>Resume-6</title>
+</head>
+<body>
+  <script type="text/javascript">
+    function DownloadFile(fileName) {
+        //Set the File URL.
+        var url = "Files/" + fileName;
+
+        //Create XMLHTTP Request.
+        var req = new XMLHttpRequest();
+        req.open("GET", url, true);
+        req.responseType = "blob";
+        req.onload = function () {
+            //Convert the Byte Data to BLOB object.
+            var blob = new Blob([req.response], { type: "application/octetstream" });
+
+            //Check the Browser type and download the File.
+            var isIE = false || !!document.documentMode;
+            if (isIE) {
+                window.navigator.msSaveBlob(blob, fileName);
+            } else {
+                var url = window.URL || window.webkitURL;
+                link = url.createObjectURL(blob);
+                var a = document.createElement("a");
+                a.setAttribute("download", fileName);
+                a.setAttribute("href", link);
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            }
+        };
+        req.send();
+    };
+</script>
+ <div id="white"></div><div id="blue"></div>
+   <div id="half-circle"></div>
+   <div id="full-circle"></div>
+   <div id="image">
+    <img src="./1.jpg" alt="profile image" >
+   </div>
+   <button class="hire-button"> Hire me </button>
+       <span id="name"> Alyson Hanger </span>
+       <div class="detail">I'm Alyson Hanger, and I manage an excellent team at Lavender Marketing. I'm enthusiastic about promoting products and services for your business.</div>
+  <div class="quality">
+    <ul >
+        <li>Honest</li>
+        <li>Brave</li>
+        <li>Confident</li>
+        <li>Extrovert</li>
+    </ul>
+  </div>
+  <button class="download"  onclick="DownloadFile('Sample.pdf')" >Download</button>
+  <div class="details-skills">Details<br><br>
+    Address:
+    Linkdeln URL:
+    Website Link:
+    Portfolio Link: 
+    <br><br><br>Skills <br><br>
+     Language1<br>
+     Language2<br>
+     Language3<br>
+     Extra Skill<br>
+     AMP<br>
+     CSS
+  </div>
+  <div class="hey"><h2>Profile</h2> <br>
+    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat 
+    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+     deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation 
+     veniam consequat sunt nostrud amet.<br><br>
+     <h2>EXPERIENCE</h2>Co-founder & Product/ Growth Designer GeekStudios (Full-Time), LA <br>
+     Plan, coordinate and execute the full spectrum of projects at a startup level, 
+     incl- uding Design Sprints, Growth hacking, UX/UI Design, and Brand Strategy/Design. I worked closely with product managers, developers, 
+     and CTO to enhance product features and meet business goals. I handle DesignOps and work with a cross-func -tional team<br>
+     <h2>EDUCATION</h2>
+     Plan, coordinate and execute the full spectrum of projects at a startup level, incl- uding
+     Design Sprints, Growth hacking, UX/UI Design, and Brand Strategy/Design. I worked closely with product managers, developers, 
+     and CTO to enhance product features and meet business goals. I handle DesignOps and work with a cross-func -tional team
+     <h2>Project</h2>
+     Plan, coordinate and execute the full spectrum of projects at a startup level, 
+     incl- uding Design Sprints, Growth hacking, UX/UI Design, and Brand Strategy/Design. I worked closely with product managers, developers, 
+     and CTO to enhance product features and meet business goals. I handle DesignOps and work with a cross-func -tional team
+  </div>
+  <div class="intro"><h2>George Gill</h2>
+    Full Stack Developer
+    gawde.swetank@gmail.com<br>+91 7507376050
+   </div>
+</body>
+</html>
